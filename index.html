@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Stock</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/flex-box.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="header-wrapper">
+            <div class="logo-wrapper logo">
+                <h1><a href="index.html"><span>A+</span> Courses</a></h1>
+            </div>
+            <div class="menu-wrapper">
+                <nav id="nav-links" style="right:-100%;">
+                        <ul class="nav-menu">
+                            <li class="mega-menu-wrapper"><a href="index.html">Home <i class="fa-solid fa-angle-down hidden-sm"></i></a>
+                                <div class="mega-menu">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="mega-menu-item">
+                                                        <h4>Home Style</h4>
+                                                    
+                                                    <ul class="mega-menu-list">
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="blog.html">Blog</a></li>
+                                                        <li><a href="#">Courses</a></li>
+                                                        <li><a href="#">About</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                                <div class="col">
+                                                    <div class="mega-menu-item">
+                                                        <h4>Home Style</h4>
+                                                    
+                                                    <ul class="mega-menu-list">
+                                                        <li><a href="index-dark.html">Home Dark</a></li>
+                                                        <li><a href="#">Home style 2</a></li>
+                                                        <li><a href="#">Home style 3</a></li>
+                                                        <li><a href="#">Home style 4</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                                <div class="col">
+                                                    <div class="mega-menu-item">
+                                                        <h4>Home Style</h4>
+                                                    
+                                                    <ul class="mega-menu-list">
+                                                        <li><a href="#">Home style 5</a></li>
+                                                        <li><a href="#">Home style 6</a></li>
+                                                        <li><a href="#">Home style 7</a></li>
+                                                        <li><a href="#">Home style 8</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                                <div class="col">
+                                                    <div class="mega-menu-item">
+                                                        <h4>Home Style</h4>
+                                                    
+                                                    <ul class="mega-menu-list">
+                                                        <li><a href="#">Home style 9</a></li>
+                                                        <li><a href="#">Home style 10</a></li>
+                                                        <li><a href="#">Faq's</a></li>
+                                                        <li><a href="#">Contact</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </li>
+                            <li id="has-children"><a href="#">Courses <i class="fa-solid fa-angle-down"></i></a>
+                                <ul class="has-children" id="nav-menu-toogle">
+    <li><a href="#">Home Dark</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="blog-detail.html">Blog Detail</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Wishlist</a></li>
+    
+   </ul>
+                            </li>
+                            <li><a href="index.html">Team</a></li>
+                            <li><a href="index.html">Contacts</a></li>
+                        </ul>
+                        <a href="#" class="res-menu-close d-none" onclick="hideMenu()">
+          <i class="fa-solid fa-xmark"></i></a>
+                    </nav>
+                    
+            </div>
+            <div class="authentication-wrapper">
+                <div class="menu-toggle" id="bar">
+                            <a class="responsive-menu-trigger d-inline-block" href="#" ><i class="fas fa-bars"></i></a>
+                        </div>
+                <a href="#" class="search-popup" data-bs-toggle="modal" data-bs-target="#header-search"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href="#" class="navbar-menu theme-btn" data-bs-toggle="modal" data-bs-target="#authorize-popup"><span class="hidden-md">Sign up</span>
+                        <i class="fa-solid fa-user show-md d-none"></i>
+                    </a>
+                </div>
+        </div>
+    </div>
+</header>
+<div id="authorize-popup" tabindex="-1" aria-labelledby="authorize-popup" class="modal fade" style="display: none;" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header"><button type="button" data-bs-dismiss="modal" aria-label="Close" class="btn-close"></button></div>
+            <div class="modal-body">
+                <div class="modal-title"><h2>Sign Up</h2></div>
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Username">
+                        <input type="email" placeholder="Email Address">
+                        <button type="button" class="forgot">Forgot Password?</button>
+                        <button type="button" class="theme-btn" >Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade show" id="header-search" tabindex="-1" aria-labelledby="header-search" aria-modal="true" role="dialog" style="display: none;">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="search-box">
+    <form action="https://efiletrademark.com/" method="get">
+        <input class="input-search" name="s" type="text" placeholder="Search here..." value="">
+        <input name="post_type" type="hidden" value="wpe_service">
+        <button type="submit" class="btn-search"><i class="fas fa-search"></i></button>
+    </form>
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+<section>
+<div class="section-hero container">
+    <div class="hero-box text-center mb-130">
+        <div class="hero-title">
+            <div class="title-bg"style="background-image:url(assets/images/resources/brush.png);"></div>
+        <h1>Find outstanding design courses, tutorials, and resources</h1>
+    </div>
+    <div class="owl-carousel owl-theme owl-hero">
+    <div class="item">
+        <div class="hero-video">
+            <img src="assets/images/resources/book.jpg" alt="Video">
+            <a href="https://www.youtube.com/watch?v=U2x8UJCcgPw" data-fancybox="video-gallery" data-width="1000" data-height="600"><i class="fa-solid fa-play"></i></a>
+        </div>
+    </div>
+    <div class="item">
+        <div class="hero-video">
+            <img src="assets/images/resources/class.jpg" alt="Video">
+            <a href="https://www.youtube.com/watch?v=U2x8UJCcgPw" data-fancybox="video-gallery" data-width="1000" data-height="600"><i class="fa-solid fa-play"></i></a>
+        </div>
+    </div>
+    <div class="item">
+        <div class="hero-video">
+            <img src="assets/images/resources/notes.jpg" alt="Video">
+            <a href="https://www.youtube.com/watch?v=U2x8UJCcgPw" data-fancybox="video-gallery" data-width="1000" data-height="600"><i class="fa-solid fa-play"></i></a>
+        </div>
+    </div>
+</div>
+<div class="hero-foot">
+    <p>Are you interested in animation and motion design but don't know where to start or how to hone your skills in this field?</p>
+    <a href="#" class="theme-btn">Browse Courses</a>
+</div>
+
+    </div>
+</div>
+</section>
+<section class="counter-section mb-130">
+    
+    <div class="container">
+        <div class="counter-wrapper">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="counter-box">
+                        <span class="counter">30
+                        </span>
+                        <p>Categories</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="counter-box">
+                        <span class="counter">300
+                        </span>
+                        <p>Courses</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="counter-box">
+                        <span class="counter">20
+                        </span>
+                        <p>Mentors</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="counter-box">
+                        <span class="counter">300
+                        </span>
+                        <p>Students</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mb-130">
+    <div class="container">
+        <div class="sec-tl text-center mb-60">
+            <h2>Affordable Membership</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non lacus quis ante ultricies finibus cursus ac ante.</p>
+            <div class="sec-tl-foot plan-choose">
+                <span class="switch-text1">monthly</span>
+                <label class="switch">
+  <input type="checkbox" checked>
+  <span class="slider round"></span>
+</label>
+                <span class="switch-text active" id="auto-switch">annually</span>
+            </div>
+        </div>
+
+        <div class="plans-wrapper">
+            <div class="row gx-2 justify-content-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="plans-box">
+                        <h3>For enthusiasts</h3>
+                        <div class="plans-head">
+                            
+                            <span class="dollar">$</span>
+                            <h2>19</h2>
+                            <span class="plan-time">/MO</span>
+                        </div>
+                        <p>Fusce eu consequat diam, nec viverra elit. Integer congue</p>
+                        <div class="plans-body">
+                            <ul class="plan-offers">
+                                <li><i class="fa-solid fa-plus"></i>Enroll unlimited courses</li>
+                                <li><i class="fa-solid fa-plus"></i>Group chat with students</li>
+                                <li><i class="fa-solid fa-plus"></i>Feedback from mentors</li>
+                                <li class="color-grey"><i class="fa-solid fa-plus"></i>Project for your portfolio</li>
+                                <li class="color-grey"><i class="fa-solid fa-plus"></i>24/7 tech support</li>
+                            </ul>
+                            <a href="#" class="theme-btn">Join Plan</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="plans-box">
+                        <h3>For creatives</h3>
+                        <div class="plans-head">
+                            
+                            <span class="dollar">$</span>
+                            <h2>25</h2>
+                            <span class="plan-time">/MO</span>
+                        </div>
+                        <p>Fusce eu consequat diam, nec viverra elit. Integer congue</p>
+                        <div class="plans-body">
+                            <ul class="plan-offers">
+                                <li><i class="fa-solid fa-plus"></i>Enroll unlimited courses</li>
+                                <li><i class="fa-solid fa-plus"></i>Group chat with students</li>
+                                <li><i class="fa-solid fa-plus"></i>Feedback from mentors</li>
+                                <li><i class="fa-solid fa-plus"></i>Project for your portfolio</li>
+                                <li class="color-grey"><i class="fa-solid fa-plus"></i>24/7 tech support</li>
+                            </ul>
+                            <a href="#" class="theme-btn">Join Plan</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="plans-box">
+                        <h3>For professional</h3>
+                        <div class="plans-head">
+                            
+                            <span class="dollar">$</span>
+                            <h2>45</h2>
+                            <span class="plan-time">/MO</span>
+                        </div>
+                        <p>Fusce eu consequat diam, nec viverra elit. Integer congue</p>
+                        <div class="plans-body">
+                            <ul class="plan-offers">
+                                <li><i class="fa-solid fa-plus"></i>Enroll unlimited courses</li>
+                                <li><i class="fa-solid fa-plus"></i>Group chat with students</li>
+                                <li><i class="fa-solid fa-plus"></i>Feedback from mentors</li>
+                                <li ><i class="fa-solid fa-plus"></i>Project for your portfolio</li>
+                                <li><i class="fa-solid fa-plus"></i>24/7 tech support</li>
+                            </ul>
+                            <a href="#" class="theme-btn">Join Plan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="mb-130">
+    <div class="container">
+        <div class="sec-tl text-center mb-60">
+            <div class="title-bg"style="background-image:url(assets/images/resources/brush.png);"></div>
+
+            <h2>Design Courses</h2>
+            <p>Mauris eget molestie purus. Aliquam varius est sit amet metus auctor hendrerit. Fusce efficitur id metus id vehicula. Mauris id erat eros.</p>
+            
+        </div>
+        <div class="design-wrapper">
+            <div class="design-tabs">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">All</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Design</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Craft</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="fashion-tab" data-bs-toggle="tab" data-bs-target="#fashion" type="button" role="tab" aria-controls="fashion" aria-selected="false">Fashion</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="app-tab" data-bs-toggle="tab" data-bs-target="#app" type="button" role="tab" aria-controls="app" aria-selected="false">App Design</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                  <div class="row justify-content-center">
+                      <div class="col-lg-4 col-md-6">
+                          <div class="design-box">
+                              <figure><a href="#"><img src="assets/images/resources/design-1.jpg" alt="Design"></a></figure>
+                              <div class="design-content">
+                                  <h3><a href="#">Design and Construction for Beginners</a></h3>
+                                  <span><a href="#">course by Jane doe</a></span>
+                                  <p>Etiam massa massa, ornare vel arcu ac, ultricies molestie ipsum. Ut in sem leo. Maecenas leo mauris, vestibulum quis.</p>
+                                  <a href="#" class="theme-btn">Enroll Course</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                          <div class="design-box">
+                              <figure><a href="#"><img src="assets/images/resources/design-2.jpg" alt="Design"></a></figure>
+                              <div class="design-content">
+                                  <h3><a href="#">Digital Art for Beginners & Graphic Design</a></h3>
+                                  <span><a href="#">course by Jane doe</a></span>
+                                  <p>Etiam massa massa, ornare vel arcu ac, ultricies molestie ipsum. Ut in sem leo. Maecenas leo mauris, vestibulum quis.</p>
+                                  <a href="#" class="theme-btn">Enroll Course</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                          <div class="design-box">
+                              <figure><a href="#"><img src="assets/images/resources/design-3.jpg" alt="Design"></a></figure>
+                              <div class="design-content">
+                                  <h3><a href="#">Vector Illustration Color & Shader Brushes</a></h3>
+                                  <span><a href="#">course by Jane doe</a></span>
+                                  <p>Etiam massa massa, ornare vel arcu ac, ultricies molestie ipsum. Ut in sem leo. Maecenas leo mauris, vestibulum quis.</p>
+                                  <a href="#" class="theme-btn">Enroll Course</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                  <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6">
+                          <div class="design-box">
+                              <figure><a href="#"><img src="assets/images/resources/design-2.jpg" alt="Design"></a></figure>
+                              <div class="design-content">
+                                  <h3><a href="#">Digital Art for Beginners & Graphic Design</a></h3>
+                                  <span><a href="#">course by Jane doe</a></span>
+                                  <p>Etiam massa massa, ornare vel arcu ac, ultricies molestie ipsum. Ut in sem leo. Maecenas leo mauris, vestibulum quis.</p>
+                                  <a href="#" class="theme-btn">Enroll Course</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                          <div class="design-box">
+                              <figure><a href="#"><img src="assets/images/resources/design-1.jpg" alt="Design"></a></figure>
+                              <div class="design-content">
+                                  <h3><a href="#">Design and Construction for Beginners</a></h3>
+                                  <span><a href="#">course by Jane doe</a></span>
+                                  <p>Etiam massa massa, ornare vel arcu ac, ultricies molestie ipsum. Ut in sem leo. Maecenas leo mauris, vestibulum quis.</p>
+                                  <a href="#" class="theme-btn">Enroll Course</a>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <div class="col-lg-4 col-md-6">
+                          <div class="design-box">
+                              <figure><a href="#"><img src="assets/images/resources/design-3.jpg" alt="Design"></a></figure>
+                              <div class="design-content">
+                                  <h3><a href="#">Vector Illustration Color & Shader Brushes</a></h3>
+                                  <span><a href="#">course by Jane doe</a></span>
+                                  <p>Etiam massa massa, ornare vel arcu ac, ultricies molestie ipsum. Ut in sem leo. Maecenas leo mauris, vestibulum quis.</p>
+                                  <a href="#" class="theme-btn">Enroll Course</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                  <div class="row justify-content-center">
+                      <div class="col-lg-4 col-md-6">
+                          <div class="design-box">
+                              <figure><a href="#"><img src="assets/images/resources/design-1.jpg" alt="Design"></a></figure>
+                              <div class="design-content">
+                                  <h3><a href="#">Design and Construction for Beginners</a></h3>
+                                  <span><a href="#">course by Jane doe</a></span>
+                                  <p>Etiam massa massa, ornare vel arcu ac, ultricies molestie ipsum. Ut in sem leo. Maecenas leo mauris, vestibulum quis.</p>
+                                  <a href="#" class="theme-btn">Enroll Course</a>
+                              </div>
+                          </div>
+                      </div>
+                      
+                  </div>
+              </div>
+              <div class="tab-pane fade" id="fashion" role="tabpanel" aria-labelledby="fashion-tab">
+                  <div class="row justify-content-center">
+                      <div class="col-lg-4 col-md-6">
+                          <div class="design-box">
+                              <figure><a href="#"><img src="assets/images/resources/design-1.jpg" alt="Design"></a></figure>
+                              <div class="design-content">
+                                  <h3><a href="#">Design and Construction for Beginners</a></h3>
+                                  <span><a href="#">course by Jane doe</a></span>
+                                  <p>Etiam massa massa, ornare vel arcu ac, ultricies molestie ipsum. Ut in sem leo. Maecenas leo mauris, vestibulum quis.</p>
+                                  <a href="#" class="theme-btn">Enroll Course</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                          <div class="design-box">
+                              <figure><a href="#"><img src="assets/images/resources/design-2.jpg" alt="Design"></a></figure>
+                              <div class="design-content">
+                                  <h3><a href="#">Digital Art for Beginners & Graphic Design</a></h3>
+                                  <span><a href="#">course by Jane doe</a></span>
+                                  <p>Etiam massa massa, ornare vel arcu ac, ultricies molestie ipsum. Ut in sem leo. Maecenas leo mauris, vestibulum quis.</p>
+                                  <a href="#" class="theme-btn">Enroll Course</a>
+                              </div>
+                          </div>
+                      </div>
+                      
+                  </div>
+              </div>
+              <div class="tab-pane fade" id="app" role="tabpanel" aria-labelledby="app-tab">
+                  <div class="row justify-content-center">
+                      <div class="col-lg-4 col-md-6">
+                          <div class="design-box">
+                              <figure><a href="#"><img src="assets/images/resources/design-1.jpg" alt="Design"></a></figure>
+                              <div class="design-content">
+                                  <h3><a href="#">Design and Construction for Beginners</a></h3>
+                                  <span><a href="#">course by Jane doe</a></span>
+                                  <p>Etiam massa massa, ornare vel arcu ac, ultricies molestie ipsum. Ut in sem leo. Maecenas leo mauris, vestibulum quis.</p>
+                                  <a href="#" class="theme-btn">Enroll Course</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                          <div class="design-box">
+                              <figure><a href="#"><img src="assets/images/resources/design-2.jpg" alt="Design"></a></figure>
+                              <div class="design-content">
+                                  <h3><a href="#">Digital Art for Beginners & Graphic Design</a></h3>
+                                  <span><a href="#">course by Jane doe</a></span>
+                                  <p>Etiam massa massa, ornare vel arcu ac, ultricies molestie ipsum. Ut in sem leo. Maecenas leo mauris, vestibulum quis.</p>
+                                  <a href="#" class="theme-btn">Enroll Course</a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6">
+                          <div class="design-box">
+                              <figure><a href="#"><img src="assets/images/resources/design-3.jpg" alt="Design"></a></figure>
+                              <div class="design-content">
+                                  <h3><a href="#">Vector Illustration Color & Shader Brushes</a></h3>
+                                  <span><a href="#">course by Jane doe</a></span>
+                                  <p>Etiam massa massa, ornare vel arcu ac, ultricies molestie ipsum. Ut in sem leo. Maecenas leo mauris, vestibulum quis.</p>
+                                  <a href="#" class="theme-btn">Enroll Course</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+</section>
+
+
+<footer>
+    <div class="container">
+        <div class="ft-wrapper">
+            <div class="row align-items-start justify-content-center">
+                <div class="col-lg-3 col-md-5">
+                    <div class="widget ft-logo">
+                        <h1><a href="index.html"><span>A+</span> Courses</a></h1>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-7">
+                    <div class="widget wp-widget">
+                        <ul class="address-content">
+                            <li>123 Street,<br> Anytown, USA 12345</li>
+                            <li><a href="#">hello@website.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="widget wp-widget">
+                    <ul class="social-links">
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    </ul>
+                    <p>© 2023 Designed by Wordpress</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="assets/js/jquery.counterup.min.js"></script>
+<script src="assets/js/flex-box.js"></script>
+<script src="assets/js/custom-script.js"></script>
+<script>
+    var navres = document.getElementById("nav-menu-toogle");
+  var liparent=document.getElementById("has-children");
+  liparent.addEventListener('click',()=>{
+    liparent.classList.toggle('active');
+    navres.classList.toggle('active');
+  });
+</script>
+</body>
+</html>
